@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #canvas {
+        background: #eee;
+        display: block;
+        margin: 115px auto;
+        border: 13px white solid;
+
+        /* background: url("./Skullgirls-16_爱给网_aigei_com.png") */
+      }
+      body {
+        background: rgb(182, 45, 45);
+      }
+      #box1 {
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        width: 265px;
+      }
+      #box1 img {
+        width: 100%;
+      }
+      #box2 {
+        position: absolute;
+        top: 510px;
+        left: 20px;
+        width: 265px;
+      }
+      #box2 img {
+        width: 100%;
+      }
+      #box3 {
+        position: absolute;
+        top: -10px;
+        left: calc(50% - 653px);
+        width: 1306px;
+        height: 100px;
+        z-index: -555;
+      }
+      #box4 {
+        position: absolute;
+        top: 847px;
+        left: calc(50% - 653px);
+        width: 1306px;
+        height: 100px;
+        z-index: -515;
+      }
+      #box4 img {
+        width: 100%;
+      }
+
+      #dfsa {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+      }
+      #dfsd {
+        position: absolute;
+        left: -5px;
+        top: 0px;
+        width: 130px;
+        height: 110px;
+        z-index: 3;
+      }
+      .cz1 {
+        background: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 115px;
+        width: 296px;
+        height: 746px;
+        z-index: -800;
+      }
+      .cz {
+        background: rgb(255, 255, 255);
+        position: absolute;
+        right: 0px;
+        top: 115px;
+        width: 295px;
+        height: 746px;
+      }
+      .cz img {
+        width: 100%;
+      }
+      /* #box3 img{
+        width: 130px;
+      } */
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="1280" ; height="720"></canvas>
+
+    
+    <div id="box1"><img src="./gfhb (1).jpg" alt="" /></div>
+    <div id="box2"><img src="./gfhb (2).jpg" alt="" /></div>
+    <div id="box3">
+      <img id="dfsa" src="./image/fight_border_bottom.png" alt="" />
+    </div>
+    <div id="box4">
+      <img src="./image/fight_border_top.png" alt="" />
+    </div>
+
+    <div class="cz">
+      <p>操作介绍</p>
+      <img src="./image/ul/ccb.png" alt="" />
+    </div>
+    
+
+    
+
+    <!-- 音乐 -->
+
+    <audio
+      id="xzyx"
+      src="./sond/16_爱给网_aigei_com.mp3"
+      controls="controls"
+      loop="false"
+      hidden="true"
+    ></audio>
+    <audio
+      id="dzks"
+      src="./sond/25_爱给网_aigei_com.mp3"
+      controls="controls"
+      loop="false"
+      hidden="true"
+    ></audio>
+    <audio
+      id="zzxz"
+      src="./sond/Mf 游戏01(Mf_Game01)_爱给网_aigei_com.mp3"
+      controls="controls"
+      loop="false"
+      hidden="true"
+    ></audio>
+
+    <!-- 人物音 -->
+    <audio
+      id="lb1"
+      src="./sond/lb/序列 01.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="lb2"
+      src="./sond/lb/蜡笔小新休息音乐_爱给网_aigei_com.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="lb3"
+      src="./sond/lb/蜡笔小新动感超人音效_爱给网_aigei_com.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="lb4"
+      src="./sond/lb/超人变身音效_爱给网_aigei_com.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+    id="lb5"
+    src="./sond/lb/fsdfs.mp3"
+    controls="controls"
+    hidden="true"
+  ></audio>
+
+    <audio
+      id="wk1"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (1).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk2"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (2).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk3"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (3).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk4"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (4).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk5"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (5).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk6"
+      src="./sond/wk/Dragon Ball Z_ Budokai 3-郎_爱给网_aigei_com (7).mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk7"
+      src="./sond/wk/fb.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+
+    <audio
+      id="xt1"
+      src="./sond/09_爱给网_aigei_com.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+    <audio
+      id="wk8"
+      src="./sond/wk/dide.mp3"
+      controls="controls"
+      hidden="true"
+    ></audio>
+
+    <audio
+    id="wk9"
+    src="./sond/wk/dfs.mp3"
+    controls="controls"
+    hidden="true"
+  ></audio>
+
+  </body>
+  <script src="./js/six.js"></script>
+  <script src="./js/first.js"></script>
+  <script src="./js/second.js"></script>
+  <script src="./js/third.js"></script>
+  <script src="./js/fore.js"></script>
+  <script src="./js/fifve.js"></script>
+  
+  <script>
+    // onmousewheel="return false";
+    //     var body=document.getElementById('bd');
+
+    // window.onscroll=function(e){
+
+    // if ( e && e.preventDefault){
+    // e.preventDefault();
+    // }else{
+    // window.event.returnValue = false;
+    // return false;
+    // }
+
+    // return false
+
+    // }
+    // document.documentElement.style.overflow = "hidden";
+
+    // var move=function(e){
+    // e.preventDefault && e.preventDefault();
+    // e.returnValue=false;
+    // e.stopPropagation && e.stopPropagation();
+    // return false;
+    //     }
+    //     var keyFunc=function(e){
+    // if(37<=e.keyCode && e.keyCode<=40){
+    // return move(e);
+    // }
+    // }
+    //     document.body.onkeydown=keyFunc;
+  </script>
+</html>
